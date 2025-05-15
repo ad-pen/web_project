@@ -1,0 +1,162 @@
+
+:root{
+    --mainBackground: #121212;
+    --containerBackground: #1E1E1E;
+
+    --mainText: #FFFFFF;
+    --subText: #CFCFCF;
+    --lowPriText: #888888;
+
+    --mainButtonBackground: #4F46E5;
+    --mainButtonText: #FFFFFF;
+    --mainButtonHover: #6C63FF;
+    --cancelButtonBackGround: #2C2C2C;
+    --cancelButtonText: #CFCFCF;
+    --cancelButtonHover: #4F46E5;
+
+    --inputBackground: #1E1E1E;
+    --inputBorders: #2E2E2E;
+    --inputFocus: #4F46E5;
+    --inputText: #FFFFFF;
+    --inputPlaceHolder: #888888;
+
+    --footerBackground: #2C2C2C;
+    --footerText: #CFCFCF;
+
+    --borderColor: #2E2E2E;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--mainBackground);
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.main-intro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-intro > h2{
+    color: var(--mainText);
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.main-intro > p{
+    color: var(--subText);
+    font-size: 17px;
+}
+.login-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+}
+.login-buttons > a{
+    width: 100px;
+    margin: 10px 5px;
+    text-decoration: none;
+    background-color: var(--mainButtonBackground);
+    color: var(--mainButtonText);
+    padding: 5px;
+    border-radius: 8px;
+    transition: background-color 150ms ease-in-out;
+}
+.login-buttons > a:hover{
+    background-color: var(--mainButtonHover);
+}
+
+
+.main-features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.feature-point{
+    background-color: var(--containerBackground);
+    border: 2px solid var(--borderColor);
+    border-radius: 16px;
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 1000px;
+    height: 150px;
+    display: flex;
+}
+.feature-point-img{
+    display: flex;
+    align-items: center;
+}
+.feature-point-img > img{
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+.feature-point > div > h2{
+    font-size: 30px;
+    color: var(--mainText);
+}
+.feature-point > div > p{
+    font-size: 16px;
+    color: var(--subText);
+}
+
+.client-review{
+    text-align: center;
+    margin-top: 40px;
+}
+.client-review > h2{
+    color: var(--mainText);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.client-review-wraper{
+    display: flex;
+    justify-content: center;
+}
+.client-review-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgb(0, 0, 0, 0.6);
+    margin: 0 10px;
+    padding: 10px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.client-review-card > h3{
+    color: var(--mainText);
+}
+.review,
+.person-img{
+    width: 100px;
+    height: auto;
+    margin: 0 5px;
+}
+
+footer{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--footerBackground);
+    height: 70px;
+}

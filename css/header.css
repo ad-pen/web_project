@@ -1,0 +1,32 @@
+:root{
+    --mainBackground: #121212;
+    --footerBackground: #2C2C2C;
+    --footerText: #CFCFCF;
+}
+
+header{
+    background-color: var(--footerBackground);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80x;
+    padding: 10px;
+}
+header > h1{
+    color: var(--footerText);
+}
+nav > ul{
+    display: flex;
+}
+nav > ul > li{
+    margin: 0 10px;
+    list-style-type: none;
+}
+nav > ul > li > a {
+    color: var(--footerText);
+    text-decoration: none;
+    font-size: 18px;
+}
+nav > ul > li > a:hover{
+    text-decoration: underline;
+}
