@@ -18,8 +18,8 @@
         <nav role="navigation" aria-label="Main navigation">
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="login.html" aria-current="page">Login</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li><a href="login.php" aria-current="page">Login</a></li>
+                <li><a href="register.php">Register</a></li>
             </ul>
         </nav>
     </header>
@@ -28,7 +28,7 @@
         <section aria-labelledby="login-heading">
             <h2 id="login-heading">Login to Your Account</h2>
             
-            <form id="login-form" action="<!--LEFT FOR BACKEND-->" method="POST">
+            <form id="login-form" action="login.php" method="POST">
                 <div class="form-group">
                     <input type="email" id="email" name="email" required aria-required="true" placeholder="Email">
                 </div>
@@ -37,10 +37,10 @@
                     <input type="password" id="password" name="password" required aria-required="true" placeholder="Password">
                 </div>
                 
-                <button type="submit" class="button">Submit</button>
+                <button type="submit" class="button" name="submit">Submit</button>
             </form>
             
-            <p>Don't have an account? <a href="register.html">Register here</a>.</p>
+            <p>Don't have an account? <a href="register.php">Register here</a>.</p>
         </section>
     </main>
 </body>
