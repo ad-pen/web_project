@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,3 +45,17 @@
     </main>
 </body>
 </html>
+
+<?php
+    if(isset($_POST["submit"])){
+        if(!empty($_POST["email"]) && !empty($_POST["password"])){
+            $_SESSION["email"] = $_POST["email"];
+            $_SESSION["password"] = $_POST["password"];
+
+            header("location: builder.php");
+
+        } else {
+            echo "<script>alert('Please fill in all fields.');</script>";
+        }
+    }
+?>
